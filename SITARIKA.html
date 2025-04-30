@@ -1,0 +1,132 @@
+<!DOCTYPE html><html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SITARIKA ACADEMY</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: url('background.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+    }
+    header {
+      text-align: center;
+      padding: 60px 20px 20px;
+    }
+    header img {
+      max-width: 200px;
+    }
+    h1, h2, h3 {
+      text-align: center;
+    }
+    .cta-button {
+      background-color: #4caf50;
+      color: white;
+      padding: 15px 30px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      text-decoration: none;
+      display: block;
+      width: fit-content;
+      margin: 20px auto;
+    }
+    .timer {
+      font-size: 1.5em;
+      text-align: center;
+      margin: 30px 0;
+    }
+    .content {
+      max-width: 900px;
+      margin: 40px auto;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 30px;
+      border-radius: 12px;
+      line-height: 1.6;
+    }
+    ul {
+      margin-left: 20px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="SITARIKA ACADEMY Logo">
+    <h1>Юдициарная (прогностическая) нумерология — Уровень 2</h1>
+    <div class="timer" id="countdown"></div>
+    <a href="https://t.me/+HNEyRVa97EBlMzFi" class="cta-button">Записаться</a>
+  </header>  <div class="content">
+    <h2>О курсе</h2>
+    <p><strong>Продолжительность:</strong> 4,5 месяца + 6 месяцев доступа к материалам<br>
+    <strong>Стоимость:</strong> 538 евро<br>
+    <strong>Скидка 20% до 12 мая:</strong> 428 евро</p><h2>Формат обучения</h2>
+<ul>
+  <li>Закрытый канал в Telegram + чат для общения и обратной связи</li>
+  <li>2 видеоурока в неделю + методические материалы</li>
+  <li>33 урока + 3 сессии вопросов-ответов</li>
+</ul>
+
+<h2>Программа курса</h2>
+<ul>
+  <li>Пирамида Возможностей: классический и авторский методы</li>
+  <li>Прогностика и алгоритм консультации</li>
+  <li>График реализации и социальной проявленности</li>
+  <li>График финансов и жизненных ресурсов</li>
+  <li>График качества жизни</li>
+  <li>График судьбы и кармы</li>
+  <li>График совместной жизни и критические годы пары</li>
+  <li>Суточные биоритмы человека</li>
+  <li>Критический возраст и график здоровья</li>
+  <li>Кармическая программа болезни, иммунитет, сила выживаемости</li>
+  <li>График болезни определённого жизненного этапа</li>
+  <li>График здоровья и шаг болезни</li>
+</ul>
+
+<h2>Дополнительно</h2>
+<ul>
+  <li>Рабочие тетради для каждого урока</li>
+  <li>Живой чат и сессии обратной связи</li>
+  <li>Живые встречи с Учителем</li>
+</ul>
+
+<h2>Итог</h2>
+<ul>
+  <li>Курсовая работа</li>
+  <li>Диплом после успешного завершения</li>
+</ul>
+
+<h3>Об Учителе</h3>
+<p><strong>Ирина Смирнова</strong> — профессиональный нумеролог, рунолог, основатель Международной школы нумерологии SITARIKA ACADEMY. Более 3000 студентов, 10000+ консультаций, десятки лет опыта. Сейчас — готова делиться этими знаниями с вами.</p>
+
+  </div>  <footer>
+    &copy; 2025 SITARIKA ACADEMY
+  </footer>  <script>
+    const deadline = new Date("May 14, 2025 00:00:00").getTime();
+    const x = setInterval(function() {
+      const now = new Date().getTime();
+      const distance = deadline - now;
+
+      const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+      document.getElementById("countdown").innerHTML =
+        "До старта: " + days + "д " + hours + "ч " + minutes + "м " + seconds + "с";
+
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "Курс уже начался!";
+      }
+    }, 1000);
+  </script></body>
+</html>
